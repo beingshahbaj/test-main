@@ -7,29 +7,22 @@
   <title>Document</title>
 </head>
 <style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    height: 100vh;
-
-  }
-
-  .container {
-    position: relative;
-    overflow: hidden;
-    display: flex;
+  .slider {
     width: 500px;
-    height: 500px;
-
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
   }
 
-  .container img {
-    object-fit: contain;
-    width: 100%;
-    position: absolute;
+  .slides {
 
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100%;
+    height: auto;
   }
 </style>
 
